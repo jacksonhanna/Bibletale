@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dqammh1yb7y85"]
+
+[ext_resource type="Script" uid="uid://cj27vn184ykeu" path="res://npc.gd" id="1_ideak"]
+[ext_resource type="PackedScene" uid="uid://dbdp3wlpdfti6" path="res://conversation.tscn" id="2_xxcha"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4cik2"]
+radius = 71.02816
+
+[node name="NPC" type="Area2D" unique_id=1780925267]
+script = ExtResource("1_ideak")
+Conversation = ExtResource("2_xxcha")
+convo_path = "res://npc_interaction.json"
+image_path = "res://bird.png"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1486976463]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1380582630]
+shape = SubResource("CircleShape2D_4cik2")
+
+[node name="Label" type="Label" parent="." unique_id=1825250473]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -57.0
+offset_top = -46.0
+offset_right = 60.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press 'e' to talk"
+
+[node name="Label2" type="Label" parent="." unique_id=826953585]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "God"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

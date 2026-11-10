@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://1ncq7xfyxrfp"]
+
+[ext_resource type="Script" uid="uid://ch6tntcoks8xc" path="res://player.gd" id="1_47kff"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4cik2"]
+size = Vector2(40, 40)
+
+[node name="Adam" type="CharacterBody2D" unique_id=1395255182 groups=["player"]]
+script = ExtResource("1_47kff")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=290211009]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.73300546, 0.7330054, 0.7330054, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=990044793]
+shape = SubResource("RectangleShape2D_4cik2")
+
+[node name="Label" type="Label" parent="." unique_id=443718140]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 18.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Adam"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dbdp3wlpdfti6"]
+
+[ext_resource type="Script" uid="uid://8tf60t8nst6r" path="res://conversation.gd" id="1_u5ion"]
+[ext_resource type="Texture2D" uid="uid://ckt0k02o1trf3" path="res://icon.svg" id="2_xa8yg"]
+
+[node name="Conversation" type="Control" unique_id=1104673337]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u5ion")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1457897225]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 120.0
+offset_top = -192.0
+offset_right = -99.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=94041328]
+layout_mode = 0
+offset_left = -50.0
+offset_top = -52.0
+offset_right = 29.0
+offset_bottom = 27.0
+texture = ExtResource("2_xa8yg")
+
+[node name="TextureRect2" type="TextureRect" parent="ColorRect" unique_id=1242906716]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -27.0
+offset_top = -52.0
+offset_right = 52.0
+offset_bottom = 27.0
+grow_horizontal = 0
+texture = ExtResource("2_xa8yg")
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=622493711]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -373.5
+offset_top = -58.0
+offset_right = 373.5
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+autowrap_mode = 2

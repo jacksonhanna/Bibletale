@@ -1,0 +1,15 @@
+[
+	{
+		"speaker": 2,
+		"line": "Hello Adam. I have just created you."
+	},
+	{
+		"speaker": 1,
+		"line": "Thanks God. Hey where's the garden"
+	},
+	{
+		"speaker": 2,
+		"line": "That will come later, when Donna
+		figures out a tilemap for this game"
+	},
+]

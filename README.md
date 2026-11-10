@@ -1,4 +1,4 @@
-###Bible game project for funzies###
+Bible game project for funzies
 
 devs: 
 - Jackson Hanna
